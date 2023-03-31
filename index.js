@@ -16,7 +16,11 @@ function isPalindrome(word) {
 */
 
 /*
-  Add written explanation of your solution here
+  The function takes the word as an arguementconverts it to lowercase and then splits it to an array.
+  After splitting it reverses the array.
+  Then it joins the array to form a single string.
+  It then checks if the word and the joint reversed word are the same.
+  If they are it returns true else it returns false.s
 */
 
 // You can run `node index.js` to view these console logs
@@ -29,6 +33,10 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("level"));
+  
 }
 
 module.exports = isPalindrome;
